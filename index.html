@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Keyboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" type="image/png" href="computer.png" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    figure {
+      position: absolute;
+      width: 825px;
+      height: 650px;
+      background-color: #F3E0BE;
+      box-sizing: border-box;
+      border-radius: 20px;
+      margin: 200px auto;
+      left: 25%;
+      top: -20%;
+    }
+
+    .buttons {
+      width: 756px;
+      height: 330px;
+      border: 2px solid;
+      border-style: inset;
+      border-color: #d89641;
+      border-radius: 15px;
+      margin: 35px 35px;
+      font-family: 'Baloo Bhaina 2', cursive;
+    }
+
+    .r1 {
+      margin: 5px 5px 5px 0;
+      display: inline-block;
+      width: 50px;
+      height: 30px;
+      float: left;
+      text-align: center;
+      color: white;
+      background: black;
+      border-radius: 5px;
+      font-size: 13px;
+      line-height: 40px;
+
+      text-align: center;
+
+    }
+
+    .power {
+      margin: 5px 5px 5px 0;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      float: left;
+      text-align: center;
+      color: white;
+      background: black;
+      border-radius: 5px;
+
+    }
+
+    .esc {
+      margin: 5px 5px 5px 5px;
+      display: inline-block;
+      width: 45px;
+      height: 30px;
+      float: left;
+      text-align: left;
+      padding-left: 5px;
+      color: white;
+      background: black;
+      border-radius: 5px;
+      font-size: 13px;
+      line-height: 30px;
+
+      text-align: left;
+
+    }
+
+    .alpha {
+      margin: 5px 5px 5px 0;
+      display: inline-block;
+      width: 46px;
+      height: 46px;
+      float: left;
+      text-align: center;
+      color: white;
+      background: black;
+      border-radius: 5px;
+      font-size: 13px;
+      line-height: 50px;
+
+    }
+
+    .r2 {
+      margin: 5px 5px 5px 0;
+      display: inline-block;
+      width: 46px;
+      height: 46px;
+      float: left;
+      text-align: center;
+      color: white;
+      background: black;
+      border-radius: 5px;
+      line-height: 25px;
+      font-size: 13px;
+
+    }
+
+    .rr2 {
+      margin: 5px 5px 5px 5px;
+      display: inline-block;
+      width: 46px;
+      height: 46px;
+      float: left;
+      text-align: center;
+      color: white;
+      background: black;
+      border-radius: 5px;
+      line-height: 25px;
+      font-size: 13px;
+
+    }
+
+    .delete {
+      margin: 5px 5px 5px 0;
+      display: inline-block;
+      width: 77px;
+      height: 47px;
+      float: left;
+      color: white;
+      background: black;
+      border-radius: 5px;
+      font-size: 13px;
+      line-height: 70px;
+      text-align: right;
+      padding-right: 5px;
+    }
+
+    .tab {
+      margin: 5px 5px 5px 5px;
+      display: inline-block;
+      width: 77px;
+      height: 46px;
+      float: left;
+      text-align: left;
+      color: white;
+      background: black;
+      border-radius: 5px;
+      padding-left: 5px;
+      font-size: 13px;
+      line-height: 65px;
+      text-align: left;
+    }
+
+    .caps {
+      margin: 5px 5px 5px 5px;
+      display: inline-block;
+      width: 85px;
+      height: 46px;
+      float: left;
+      color: white;
+      background: black;
+      border-radius: 5px;
+      font-size: 13px;
+      line-height: 23px;
+      text-align: left;
+      padding-left: 5px;
+    }
+
+    .return {
+      margin: 5px 5px 5px 0;
+      display: inline-block;
+      width: 84px;
+      height: 46px;
+      float: left;
+      color: white;
+      background: black;
+      border-radius: 5px;
+      font-size: 13px;
+      line-height: 70px;
+      text-align: right;
+      padding-right: 5px;
+    }
+
+    .shift {
+      margin: 5px 5px 5px 5px;
+      display: inline-block;
+      width: 110px;
+      height: 46px;
+      float: left;
+      color: white;
+      background: black;
+      border-radius: 5px;
+      font-size: 13px;
+      line-height: 65px;
+      text-align: left;
+      padding-left: 5px;
+    }
+
+    .shift1 {
+      margin: 5px 5px 5px 0;
+      display: inline-block;
+      width: 110px;
+      height: 46px;
+      float: left;
+      color: white;
+      background: black;
+      border-radius: 5px;
+      font-size: 13px;
+      line-height: 70px;
+      text-align: right;
+      padding-right: 5px;
+    }
+
+    .r6 {
+      margin: 5px 5px 5px 0;
+      display: inline-block;
+      width: 46px;
+      height: 46px;
+      float: left;
+      color: white;
+      background: black;
+      border-radius: 5px;
+      font-size: 13px;
+      line-height: 22px;
+      text-align: center;
+    }
+
+    .fn {
+      margin: 5px 5px 5px 5px;
+      display: inline-block;
+      width: 46px;
+      height: 46px;
+      float: left;
+      color: white;
+      background: black;
+      border-radius: 5px;
+      font-size: 13px;
+      line-height: 65px;
+      text-align: left;
+      padding-left: 5px;
+    }
+
+    .command {
+      margin: 5px 5px 5px 0;
+      display: inline-block;
+      width: 64px;
+      height: 46px;
+      float: left;
+      color: white;
+      background: black;
+      border-radius: 5px;
+      font-size: 13px;
+      line-height: 23px;
+      text-align: center;
+    }
+
+    .left {
+      margin: 5px 5px 5px 0;
+      display: inline-block;
+      width: 46px;
+      height: 46px;
+      float: left;
+      color: white;
+      background: black;
+      border-radius: 5px;
+      font-size: 13px;
+      line-height: 47px;
+      text-align: center;
+    }
+
+    .right {
+      margin: 5px 5px 5px 0;
+      display: inline-block;
+      width: 46px;
+      height: 46px;
+      float: left;
+      color: white;
+      background: black;
+      border-radius: 5px;
+      font-size: 13px;
+      line-height: 47px;
+      text-align: center;
+    }
+
+    .space {
+      margin: 5px 5px 5px 0;
+      display: inline-block;
+      width: 245px;
+      height: 46px;
+      float: left;
+      color: white;
+      background: black;
+      border-radius: 5px;
+    }
+
+    .mouse {
+      width: 320px;
+      height: 220px;
+      border: 2px solid;
+      border-style: inset;
+      border-color: #d89641;
+      border-radius: 10px;
+      margin: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <figure class="keys">
+    <div class="buttons">
+      <div class="esc">esc</div>
+      <div class="r1">F1</div>
+      <div class="r1">F2</div>
+      <div class="r1">F3</div>
+      <div class="r1">F4</div>
+      <div class="r1">F5</div>
+      <div class="r1">F6</div>
+      <div class="r1">F7</div>
+      <div class="r1">F8</div>
+      <div class="r1">F9</div>
+      <div class="r1">F10</div>
+      <div class="r1">F11</div>
+      <div class="r1">F12</div>
+      <div class="power"></div>
+
+      <div class="rr2">~<br />`</div>
+      <div class="r2">!<br />1</div>
+      <div class="r2">@<br />2</div>
+      <div class="r2">#<br />3</div>
+      <div class="r2">$<br />4</div>
+      <div class="r2">%<br />5</div>
+      <div class="r2">^<br />6</div>
+      <div class="r2">&<br />7</div>
+      <div class="r2">*<br />8</div>
+      <div class="r2">(<br />9</div>
+      <div class="r2">)<br />0</div>
+      <div class="r2">_<br />-</div>
+      <div class="r2">+<br />=</div>
+      <div class="delete">delete</div>
+
+      <div class="tab">tab</div>
+      <div class="alpha">Q</div>
+      <div class="alpha">W</div>
+      <div class="alpha">E</div>
+      <div class="alpha">R</div>
+      <div class="alpha">T</div>
+      <div class="alpha">Y</div>
+      <div class="alpha">U</div>
+      <div class="alpha">I</div>
+      <div class="alpha">O</div>
+      <div class="alpha">P</div>
+      <div class="r2">{<br />[</div>
+      <div class="r2">}<br />]</div>
+      <div class="r2">|<br />\</div>
+
+      <div class="caps">.<br />caps lock</div>
+      <div class="alpha">A</div>
+      <div class="alpha">S</div>
+      <div class="alpha">D</div>
+      <div class="alpha">F</div>
+      <div class="alpha">G</div>
+      <div class="alpha">H</div>
+      <div class="alpha">J</div>
+      <div class="alpha">K</div>
+      <div class="alpha">L</div>
+      <div class="r2">:<br />;</div>
+      <div class="r2">"<br />'</div>
+      <div class="return">return</div>
+
+      <div class="shift">shift</div>
+      <div class="alpha">Z</div>
+      <div class="alpha">X</div>
+      <div class="alpha">C</div>
+      <div class="alpha">V</div>
+      <div class="alpha">B</div>
+      <div class="alpha">N</div>
+      <div class="alpha">M</div>
+      <div class="r2">
+        <<br />,</div>
+      <div class="r2">><br />.</div>
+      <div class="r2">?<br />/</div>
+      <div class="shift1">shift</div>
+
+      <div class="fn">fn</div>
+      <div class="r6">^<br />control</div>
+      <div class="r6">⌥<br />option</div>
+      <div class="command">⌘<br />command</div>
+      <div class="space"></div>
+      <div class="command">⌘<br />command</div>
+      <div class="r6">⌥<br />option</div>
+      <div class="left"><</div>
+      <div class="r6">∧<br />∨</div>
+      <div class="right">></div>
+      </div>
+      <div class="mouse"></div>
+
+
+  </figure>
+
+</body>
+
+</html>
